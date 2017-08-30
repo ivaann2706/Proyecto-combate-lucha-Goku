@@ -1,0 +1,82 @@
+[
+	{
+	"nombre": "Son Goku",
+	"ataque": 79,
+	"defensa": 87,
+	"ki": 64,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/01.png"
+	},
+	{
+	"nombre": "Goten",
+	"ataque": 67,
+	"defensa": 55,
+	"ki": 76,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/02.png"
+	},
+	{
+	"nombre": "Tao Pai Pai",
+	"ataque": 52,
+	"defensa": 49,
+	"ki": 10,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/03.png"
+	},
+	{
+	"nombre": "Piccolo",
+	"ataque": 75,
+	"defensa": 80,
+	"ki": 57,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/04.png"
+	},
+	{
+	"nombre": "Mr. Satan",
+	"ataque": 36,
+	"defensa": 40,
+	"ki": 5,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/05.png"
+	},
+	{
+	"nombre": "Magin Vegeta",
+	"ataque": 92,
+	"defensa": 84,
+	"ki": 72,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/06.png"
+	},
+	{
+	"nombre": "Freezer",
+	"ataque": 86,
+	"defensa": 92,
+	"ki": 91,
+	"vida": 125,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/07.png"
+	},
+	{
+	"nombre": "Krillin",
+	"ataque": 78,
+	"defensa": 60,
+	"ki": 49,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/08.png"
+	},
+	{
+	"nombre": "Cell",
+	"ataque": 86,
+	"defensa": 78,
+	"ki": 89,
+	"vida": 150,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/09.png"
+	},
+	{
+	"nombre": "Trunks",
+	"ataque": 82,
+	"defensa": 78,
+	"ki": 82,
+	"vida": 100,
+	"imagen": "http://exprimeandroid.neocities.org/pelearsus/img/10.png"
+	}
+]

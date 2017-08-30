@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html data-ng-app="miModulo" data-ng-controller="miControlador as vm">
+<head >
+	<meta charset="UTF-8"/>
+	<title>Ivan Evaluacion </title>
+	<!-- Librerias Externas (jQuery, Bootstrap y los nuestros) -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<!-- Optional theme -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<!-- Angular -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<!-- Mi codigo js -->
+	<script type="text/javascript" src="codigo.js"></script>
+	
+	
+</head>
+<body>
+	<div class="jumbotron">
+		<h1 class="textoCentro">  Pelearsus Battles </h1>
+		
+		 <div class="panel panel-default" ng-hide="vm.listaJugadores.length > 0">
+			 <div class="panel-heading"><p>Escoger jugador</p></div>
+			 <div class="panel-body">
+				 <button class="btn btn-block btn-lg glyphicon glyphicon-random btn-info" ng-click="vm.obtenerLuchadores()"> </button>
+			 </div>
+		</div>
+		
+		<div class="panel panel-default textoCentro" ng-show="vm.listaJugadores.length > 0">
+			<div class="panel-heading">{{vm.jugadorAleatorio1.nombre}} <span class="label label-danger " >vs</span> {{vm.jugadorAleatorio2.nombre}} </div>
+			<div class="panel-body">
+				<button class="btn btn-lg glyphicon glyphicon-chevron-right btn-info col-md-6" ng-click="vm.atacar1al2()">  </button>
+				<button class="btn btn-lg glyphicon glyphicon-chevron-left btn-info col-md-6" ng-click="vm.atacar2al1()"> </button>
+				<table class="col-md-6">
+					<tr>
+						<td colspan="3">{{vm.jugadorAleatorio1.nombre}}</td>
+						
+					</tr>
+					<tr>
+						<td rowspan="4"> <img alt="Imagen del luchador 1" ng-src="{{vm.jugadorAleatorio1.imagen}}"></td>
+						<td>Vida</td>
+						<td>{{vm.jugadorAleatorio1.vida}}</td>
+					</tr>
+					<tr>
+						
+						<td>Ataque</td>
+						<td>{{vm.jugadorAleatorio1.ataque}}</td>
+					</tr>
+					<tr>
+						
+						<td>Defensa</td>
+						<td>{{vm.jugadorAleatorio1.defensa}}</td>
+					</tr>
+					<tr>
+					
+						<td>Ki</td>
+						<td>{{vm.jugadorAleatorio1.ki}}</td>
+					</tr>
+				</table>
+				
+				<table  class="col-md-6">
+					<tr>
+						<td colspan="3">{{vm.jugadorAleatorio2.nombre}}</td>
+						
+					</tr>
+					<tr>
+						<td rowspan="4"> <img alt="Imagen del luchador 2" ng-src="{{vm.jugadorAleatorio2.imagen}}"></td>
+						<td>Vida</td>
+						<td>{{vm.jugadorAleatorio2.vida}}</td>
+					</tr>
+					<tr>
+						
+						<td>Ataque</td>
+						<td>{{vm.jugadorAleatorio2.ataque}}</td>
+					</tr>
+					<tr>
+						
+						<td>Defensa</td>
+						<td>{{vm.jugadorAleatorio2.defensa}}</td>
+					</tr>
+					<tr>
+					
+						<td>Ki</td>
+						<td>{{vm.jugadorAleatorio2.ki}}</td>
+					</tr>
+				</table>
+			
+			
+			
+			
+			</div>
+		</div>
+		
+		
+		
+	</div>
+	
+	
+</body>
+</html>
